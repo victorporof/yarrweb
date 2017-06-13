@@ -1,0 +1,23 @@
+{
+  "presets": [
+    ["env", {
+      "targets": {
+        "browsers": ["last 2 versions"],
+        "node": "current"
+      }
+    }],
+    ["react"]
+  ],
+  "env": {
+    "production": {
+      "presets": ["react-optimize"]
+    }
+  },
+  "plugins": [
+    "transform-runtime",
+    "transform-class-properties",
+    "transform-decorators-legacy",
+    "transform-object-rest-spread",
+    "transform-private-underscore"
+  ]
+}
